@@ -40,13 +40,16 @@ export default function ScrollToTop() {
                     initial={{ opacity: 0, scale: 0.5, y: 20 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.5, y: 20 }}
-                    className="fixed bottom-8 right-8 z-50"
+                    className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-50"
                 >
                     <button
                         onClick={scrollToTop}
-                        className="group relative flex items-center justify-center w-14 h-14 bg-background/80 backdrop-blur-xl border border-primary/20 rounded-full shadow-2xl hover:border-primary/50 transition-colors"
+                        className="group relative flex items-center justify-center w-12 h-12 md:w-14 md:h-14 bg-background/80 backdrop-blur-xl border border-primary/20 rounded-full shadow-2xl hover:border-primary/50 transition-colors"
                     >
-                        <svg className="absolute inset-0 w-full h-full -rotate-90 p-1">
+                        <svg
+                            viewBox="0 0 48 48"
+                            className="absolute inset-0 w-full h-full -rotate-90 p-1"
+                        >
                             <circle
                                 cx="24"
                                 cy="24"

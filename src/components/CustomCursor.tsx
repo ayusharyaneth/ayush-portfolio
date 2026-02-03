@@ -38,7 +38,7 @@ export default function CustomCursor() {
     return (
         <>
             <motion.div
-                className="fixed top-0 left-0 w-3 h-3 bg-primary rounded-full pointer-events-none z-[9999] mix-blend-difference"
+                className="hidden lg:block fixed top-0 left-0 w-3 h-3 bg-primary rounded-full pointer-events-none z-[9999] mix-blend-difference"
                 style={{
                     translateX: "-50%",
                     translateY: "-50%",
@@ -47,7 +47,7 @@ export default function CustomCursor() {
                 }}
             />
             <motion.div
-                className="fixed top-0 left-0 w-8 h-8 border border-primary rounded-full pointer-events-none z-[9998] mix-blend-difference"
+                className="hidden lg:block fixed top-0 left-0 w-8 h-8 border border-primary rounded-full pointer-events-none z-[9998] mix-blend-difference"
                 style={{
                     translateX: "-50%",
                     translateY: "-50%",
