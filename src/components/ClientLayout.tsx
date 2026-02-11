@@ -5,6 +5,7 @@ import CustomCursor from '@/components/CustomCursor';
 import { useState, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/next';
 
 export default function ClientLayout({
     children,
@@ -34,6 +35,7 @@ export default function ClientLayout({
                         </AnimatePresence>
                     </>
                 )}
+                <Analytics />
             </body>
         </html>
     );
